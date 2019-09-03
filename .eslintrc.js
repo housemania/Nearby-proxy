@@ -6,5 +6,14 @@
  */
 
 module.exports = {
-  extends: './node_modules/eslint-config-hackreactor/index.js'
+//   extends: './node_modules/eslint-config-hackreactor/index.js'
+  {
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+
+    "env": {
+        "es6": true
+    }
+  }
 };
