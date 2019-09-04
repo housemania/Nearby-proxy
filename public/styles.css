@@ -1,0 +1,6 @@
+.nearbyHouses {
+  width: 1500px;
+  height: 450px;
+  background: red;
+  object-fit: scale-down;
+}
