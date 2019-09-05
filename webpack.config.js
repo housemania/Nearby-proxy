@@ -1,6 +1,8 @@
+const path = require('path'); 
+
 module.exports = {
   entry: {
-    reviews: __dirname + '../../reviews/client/src/index.jsx',
+    reviews: __dirname + '../../reviews/client/src/index.js',
     nearby: __dirname + '../../nearby-service-repo/client/index.jsx',
     vendor: ["styled-components"],
   },
@@ -24,6 +26,11 @@ module.exports = {
         }
       }
       
+    }
+  },
+  resolve: {
+    alias: {
+      "styled-components": path.resolve("./node_modules", "styled-components"),
     }
   },
   module: {
